@@ -1,2 +1,2 @@
 # helloworld
-spring boot + jpa
+spring boot + jpa + gradle
