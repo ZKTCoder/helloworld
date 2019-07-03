@@ -1,0 +1,21 @@
+spring:
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/hello_world?characterEncoding=utf8&useSSL=true&serverTimezone=UTC
+    password: password
+    username: root
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  security:
+    user:
+      name: user
+      password: user
+
+  thymeleaf:
+    cache: true
