@@ -13,9 +13,19 @@ spring:
       ddl-auto: update
 
   security:
+    basic:
+      enabled: false
     user:
       name: user
       password: user
 
   thymeleaf:
-    cache: true
+    cache: false
+    prefix: classpath:/templates/
+#    suffix: .html
+
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
