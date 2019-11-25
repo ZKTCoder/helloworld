@@ -9,4 +9,6 @@ public interface UserService {
     User findUser();
 
     List<User> findAll();
+
+    void addUserA();
 }

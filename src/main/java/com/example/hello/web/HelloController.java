@@ -125,6 +125,12 @@ public class HelloController {
         os.close();
     }
 
+    @RequestMapping(value = "/add")
+    @ResponseBody
+    public void addUser() {
+        userService.addUserA();
+    }
+
     public void transferToFile(InputStream is, File file) {
         try {
             OutputStream os = new FileOutputStream(file);
