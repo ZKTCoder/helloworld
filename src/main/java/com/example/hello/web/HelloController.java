@@ -33,9 +33,9 @@ public class HelloController {
     @ResponseStatus(HttpStatus.OK)
     public String index() {
 
-//        User user = userService.findUser();
-//        return "Hello World " + user.getName() + "!";
-        return "index";
+        User user = userService.findUser();
+        return "Hello World " + user.getName() + "!";
+//        return "index";
     }
 
     @GetMapping("/upload")
